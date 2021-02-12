@@ -22,7 +22,7 @@ public class OperatorBasedTask {
 		int i1;
 		int i2;
 		
-		scanner.close();
+		
 		switch (option){
 		case 1:
 			System.out.println("Enter numbers: ");
@@ -60,6 +60,7 @@ public class OperatorBasedTask {
 			System.out.println("Enter valid operation.");
 			
 		}
+		scanner.close();
 		
 
 	}
