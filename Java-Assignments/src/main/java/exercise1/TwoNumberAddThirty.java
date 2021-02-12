@@ -13,7 +13,7 @@ public class TwoNumberAddThirty {
 		
 		if ((i1 < 1 && i2 < 1) && (i1 > 10 && i2 > 10) ) {
 			scanner.close();
-			throw new IllegalStateException("Enter valid input");
+			throw new IllegalStateException("Enter valid input.");
 			
 		}
 		int z = i1+i2;
