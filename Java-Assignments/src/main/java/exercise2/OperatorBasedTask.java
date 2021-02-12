@@ -24,6 +24,7 @@ public class OperatorBasedTask {
 		 int second = scanner.nextInt();
 		 int first1 = 0;
 		 int second2 = 0;
+		 float result = 0;
 		if (option  ==  5) {
 			System.out.println("Enter 2 more numbers: ");
 			first1 = scanner.nextInt();
@@ -36,26 +37,33 @@ public class OperatorBasedTask {
 		switch (option){
 		case 1:
 			
-			System.out.print("Add: " + (first+second));
+			result = first+second;
 			break;
 		case 2:
 			
-			System.out.print("Sub: " + (first - second));
+			result = (first - second);
 			break;
 		case 3:
 			
-			System.out.print("Div: " + (first/second));
+			result = first/second;
 			break;
 		case 4:
-			System.out.print("Mul: " + (first*second));
+			result = first*second;
 			break;
 		case 5:
 			
-			System.out.print("Avg: " + (float)(first+second+first1+second2)/4);
+			result = (float)(first+second+first1+second2)/4;
 			break;
 		default:
 			System.out.println("Enter valid operation.");
 			
+		}
+		
+		if (result < 0) {
+			System.out.println("Oops! option " + option + " is returning a negative value.");
+		}
+		else {
+			System.out.println("Result of operation is: " + result);
 		}
 		scanner.close();
 		
