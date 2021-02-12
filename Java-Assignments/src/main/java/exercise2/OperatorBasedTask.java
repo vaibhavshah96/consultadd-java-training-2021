@@ -18,43 +18,40 @@ public class OperatorBasedTask {
 				);
 		
 		Scanner scanner = new Scanner(System.in);
-		int option = scanner.nextInt();
-		int i1;
-		int i2;
+		Integer option = scanner.nextInt();
+		System.out.println("Enter 2 numbers: ");
+		 int first = scanner.nextInt();
+		 int second = scanner.nextInt();
+		 int first1 = 0;
+		 int second2 = 0;
+		if (option  ==  5) {
+			System.out.println("Enter 2 more numbers: ");
+			first1 = scanner.nextInt();
+			second2 = scanner.nextInt();
+		}
+		
+		
 		
 		
 		switch (option){
 		case 1:
-			System.out.println("Enter numbers: ");
-			i1 = scanner.nextInt();
-			i2 = scanner.nextInt();
-			System.out.print("Add: " + (i1+i2));
+			
+			System.out.print("Add: " + (first+second));
 			break;
 		case 2:
-			System.out.println("Enter numbers: ");
-			i1 = scanner.nextInt();
-			i2 = scanner.nextInt();
-			System.out.print("Sub: " + (i1 - i2));
+			
+			System.out.print("Sub: " + (first - second));
 			break;
 		case 3:
-			System.out.println("Enter numbers: ");
-			i1 = scanner.nextInt();
-			i2 = scanner.nextInt();
-			System.out.print("Div: " + (i1/i2));
+			
+			System.out.print("Div: " + (first/second));
 			break;
 		case 4:
-			System.out.println("Enter numbers: ");
-			i1 = scanner.nextInt();
-			i2 = scanner.nextInt();
-			System.out.print("Mul: " + (i1*i2));
+			System.out.print("Mul: " + (first*second));
 			break;
 		case 5:
-			System.out.println("Enter 4 numbers: ");
-			i1 = scanner.nextInt();
-			i2 = scanner.nextInt();
-			int first1 = scanner.nextInt();
-			int first2 = scanner.nextInt();
-			System.out.print("Avg: " + (float)(i1+i2+first1+first2)/4);
+			
+			System.out.print("Avg: " + (float)(first+second+first1+second2)/4);
 			break;
 		default:
 			System.out.println("Enter valid operation.");
