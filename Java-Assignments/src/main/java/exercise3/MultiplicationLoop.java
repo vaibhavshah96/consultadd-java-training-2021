@@ -14,8 +14,8 @@ public class MultiplicationLoop {
 		char c = scanner.next().charAt(0);
 		
 		
+		
 		if (c == 'y') {
-			System.out.println("Y loop");
 			i = 15;
 		}
 		else if (c == 'n') {
