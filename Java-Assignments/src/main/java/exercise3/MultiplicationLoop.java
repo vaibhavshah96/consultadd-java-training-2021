@@ -24,7 +24,7 @@ public class MultiplicationLoop {
 		int number = scanner.nextInt();
 
 		for (int j = 1; j <= i; j++) {
-			System.out.println(j + "*" + number + "=" + j * number);
+			System.out.println(number + " X " + j + " = " + j * number);
 		}
 
 		scanner.close();
