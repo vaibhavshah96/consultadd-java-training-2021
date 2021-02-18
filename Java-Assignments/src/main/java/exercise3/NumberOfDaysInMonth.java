@@ -22,7 +22,7 @@ public class NumberOfDaysInMonth {
 			date = YearMonth.parse(dateString, dateTimeFormatter);
 			System.out.println("Number of days : " + date.lengthOfMonth());
 		} catch (Exception e) {
-			System.out.println("Enter correct format: yyyy-mm");
+			System.out.println("Check month entered or enter correct format: yyyy-mm");
 		}
 
 		scanner.close();
