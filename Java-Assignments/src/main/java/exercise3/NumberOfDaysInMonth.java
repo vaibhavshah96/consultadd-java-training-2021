@@ -16,11 +16,17 @@ public class NumberOfDaysInMonth {
 
 		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM");
 
-		YearMonth date = YearMonth.parse(dateString, dateTimeFormatter);
+		YearMonth date;
+
+		try {
+			date = YearMonth.parse(dateString, dateTimeFormatter);
+			System.out.println("Number of days : " + date.lengthOfMonth());
+		} catch (Exception e) {
+			System.out.println("Enter correct format: yyyy-mm");
+		}
 
 		scanner.close();
 
-		System.out.println("Number of days : " + date.lengthOfMonth());
 	}
 
 }
