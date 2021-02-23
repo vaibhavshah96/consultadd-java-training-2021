@@ -20,8 +20,8 @@ public class SumOfAllWithoutMinMax {
 
 		numbers.sort(null);
 
-		Integer min = numbers.get(0);
-		Integer max = numbers.get(numbers.size() - 1);
+		int min= numbers.get(0);
+		int max = numbers.get(numbers.size() - 1);
 
 		for (int i = numbers.lastIndexOf(min) + 1; i < numbers.indexOf(max); i++) {
 			sum = sum + numbers.get(i);
