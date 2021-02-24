@@ -32,14 +32,14 @@ public class FrequencyBasedSorting {
 		
 		Collections.sort(list, (a, b) -> (countLetter.get(a).compareTo(countLetter.get(b)))); // Switch get(a), get(b) for decreasing frequency.
 
-		String sb = new String(); // Result string
+		StringBuilder sb = new StringBuilder(); // Result string
 		for (Character l : list) {
 			for (int i = 0; i < countLetter.get(l); i++) {
-				sb = sb + l; // Iterate over the key, "value" number of times and concatenate to the result string.
+				sb = sb.append(l); // Iterate over the key, "value" number of times and concatenate to the result string.
 			}
 		}
 
-		System.out.println(sb);
+		System.out.println(sb.toString());
 
 		scanner.close();
 	}
