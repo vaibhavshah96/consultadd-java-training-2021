@@ -13,7 +13,7 @@ public class BalancedBraces {
 		for (Character c : str.toCharArray()) {
 			if (c == '[' || c == '{' || c == '(') {
 				bracesList.push(c);
-				
+
 			} else {
 				if (c == ']') {
 					if (bracesList.pop() != '[') {
