@@ -1,6 +1,5 @@
 package exercise4;
 
-import java.util.ArrayList;
 import java.util.Stack;
 
 public class BalancedBraces {
@@ -18,7 +17,6 @@ public class BalancedBraces {
 				if (c == ']') {
 					if (bracesList.pop() != '[') {
 						break;
-
 					}
 				}
 				if (c == ')') {
@@ -28,7 +26,6 @@ public class BalancedBraces {
 				}
 				if (c == '}') {
 					if (bracesList.pop() != '{') {
-
 						break;
 					}
 				}
