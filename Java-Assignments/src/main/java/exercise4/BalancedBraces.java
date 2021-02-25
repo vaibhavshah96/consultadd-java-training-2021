@@ -1,42 +1,34 @@
 package exercise4;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 public class BalancedBraces {
 
 	public static void main(String[] args) {
 
 		String str = "[66]{}[(]";
-		int i = 0;
-		ArrayList<Character> bracesList = new ArrayList<Character>();
+		Stack<Character> bracesList = new Stack<Character>();
 
 		for (Character c : str.toCharArray()) {
 			if (c == '[' || c == '{' || c == '(') {
-				bracesList.add(c);
-				i++;
+				bracesList.push(c);
+				
 			} else {
 				if (c == ']') {
-					if (bracesList.get(i - 1) == '[') {
-						bracesList.remove(i - 1);
-						i = i - 1;
-
-					} else {
+					if (bracesList.pop() != '[') {
 						break;
+
 					}
 				}
 				if (c == ')') {
-					if (bracesList.get(i - 1) == '(') {
-						bracesList.remove(i - 1);
-						i = i - 1;
-					} else {
+					if (bracesList.pop() != '(') {
 						break;
 					}
 				}
 				if (c == '}') {
-					if (bracesList.get(i - 1) == '{') {
-						bracesList.remove(i - 1);
-						i = i - 1;
-					} else {
+					if (bracesList.pop() != '{') {
+
 						break;
 					}
 				}
