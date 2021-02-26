@@ -18,31 +18,29 @@ class Complex {
 
 	public static String addComplex(Complex c1, Complex c2) {
 		Complex res = new Complex();
-		
+
 		res.real = c1.real + c2.real;
 		res.imaginary = c1.imaginary + c2.imaginary;
-		
+
 		return printComplex(res);
 	}
 
 	public static String subComplex(Complex c1, Complex c2) {
 		Complex res = new Complex();
-		
+
 		res.real = c1.real - c2.real;
 		res.imaginary = c1.imaginary - c2.imaginary;
-		
+
 		return printComplex(res);
 
 	}
 
 	public static String mulComplex(Complex c1, Complex c2) {
 		Complex res = new Complex();
-		
+
 		res.real = (c1.real * c2.real) + (c1.imaginary * c2.imaginary);
 		res.imaginary = (c1.real * c2.imaginary) + (c1.imaginary * c2.real);
-		
-		
-		
+
 		return printComplex(res);
 	}
 
