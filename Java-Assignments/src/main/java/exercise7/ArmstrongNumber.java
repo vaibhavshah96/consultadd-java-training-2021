@@ -1,4 +1,4 @@
-package exercise6;
+package exercise7;
 
 public class ArmstrongNumber {
 
